@@ -8,7 +8,10 @@
 button , body{
     font-family: "poppins" , sans-serif;
 }
-
+p{
+    font-size: 14px;
+    line-height: 26px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +22,7 @@ button , body{
     width: 100%;
 }
 .container{
-    width: 1140px;
+    width: 1300px;
     margin: auto;
 }
 /* ----------End common style-----------*/
@@ -61,5 +64,48 @@ header nav ul li a{
 header nav ul li a:hover{
     background-color: var(--themeYellow);
 }
-
+.banner{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.banner h1{
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 100;
+}
+.banner h1 span{
+    background-color: var(--themeYellow);
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.banner p{
+    color: #fff;
+    width: 50%;
+    text-shadow: 0 0 2px #000;
+    margin-top: 10px;
+}
+.banner button{
+    background-color:var(--themeYellow);
+    border: 0;
+    outline: none;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 3px;
+    font-weight: 600;
+}
 /*-------------------End Home style ------------------*/
