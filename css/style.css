@@ -1,0 +1,65 @@
+/*--------------- common style---------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --themeYellow:#ffc10d;
+    --white:white;
+}
+button , body{
+    font-family: "poppins" , sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fullContainer{
+    width: 100%;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+}
+/* ----------End common style-----------*/
+
+/*-------------------Start Home style ------------------*/
+header{
+    width: 100%;
+    background-color: rgba(0.0, 0.0, 0.0, 0.6);
+    position: fixed;
+    z-index: 2;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+header .container .logo{
+    padding: 15px 0;
+    height: 75px;
+}
+header .container .logo img{
+    height: 100%;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s;
+}
+header nav ul li a:hover{
+    background-color: var(--themeYellow);
+}
+
+/*-------------------End Home style ------------------*/
