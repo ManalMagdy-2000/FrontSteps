@@ -109,3 +109,35 @@ header nav ul li a:hover{
     font-weight: 600;
 }
 /*-------------------End Home style ------------------*/
+
+/*------------------ about us section-----------------*/
+.sectionTitle{ /*line decoration about us*/ 
+    width: 300px;
+    border-bottom: 3px solid var(--themeYellow);
+    text-align:center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.sectionTitle::after{ /*small diamond*/
+    display:inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--themeYellow);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50% , 50%);
+    border: 3px solid #fff;
+}
+
+section{
+    padding: 100px 0;
+    position: relative;
+}
+/*------------------ End about us section-----------------*/
