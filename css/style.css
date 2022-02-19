@@ -47,6 +47,7 @@ header .container .logo img{
 }
 header nav ul{
     list-style-type: none;
+    text-decoration: none;
 }
 header nav ul li{
     display: inline-block;
@@ -63,6 +64,19 @@ header nav ul li a{
 }
 header nav ul li a:hover{
     background-color: var(--themeYellow);
+    text-decoration: none;
+    color: whitesmoke;
+}
+.logo a{
+    text-decoration: none;
+    color: orange; 
+    font-size: 30px; 
+    padding-top: 0; 
+    font-family: 'Monoton', cursive;
+}
+.logo .a span{
+    color: cadetblue; 
+    font-size:50px;
 }
 .banner{
     min-height: 100vh;
@@ -139,6 +153,7 @@ header nav ul li a:hover{
 section{
     padding: 80px 0;
     position: relative;
+    margin-top: 100px;
 }
 .sectionTitle p{
     margin-bottom: 100px;
