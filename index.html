@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrontSteps</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="fullContainer banner " id="homeSection">
@@ -14,16 +15,16 @@
                 <div class="logo" style="color: orange; font-size: 30px; padding-top: 0; font-family: 'Monoton', cursive;">
                     front<span style="color: cadetblue; font-size:50px;">S</span>teps
                 </div>
-                <nav>
+                <nav class="topnav">
                     <ul>
                         <li>
-                            <a href="Javascript:void(0);">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="Javascript:void(0);">About Us</a>
+                            <a href="#aboutSection">About Us</a>
                         </li>
                         <li>
-                            <a href="Javascript:void(0);">Services</a>
+                            <a href="#servicesSection">Services</a>
                         </li>
                         <li>
                             <a href="Javascript:void(0);">Contact Us</a>
@@ -53,6 +54,40 @@
         </div>
     </section>
     <!-----End About Us ---->
+    <!---------start services section -------->
+    <section class="fullContainer" id="servicesSection">
+        <div class="container">
+            <h2 class="sectionTitle">Services</h2>
+            <div class="cards">
+                <div class="donationBox">
+                    <!-- Start donation Box-->
+                    <div class="title">Give Dontation</div>
+                    <a href="logIn.html">
+                        <button>Donate Now</button>
+                    </a>
+                    
+                    <!-- Ends donation Box-->
+                </div>
+                <div class="aidBox">
+                    <!-- aid applicant Box-->
+                    <div class="title">Aid Applicant</div>
+                    <a href="logIn.html">
+                        <button>Apply Now</button>
+                    </a>
+                    <!-- Ends aid applicant Box-->
+                </div>
+                <div class="volunteerBox">
+                    <!-- Start volunteer Box-->
+                    <div class="title">Become a volunteer</div>
+                    <a href="logIn.html">
+                        <button >Become Now</button>
+                    </a>
+                    <!-- Ends volunteer Box-->
+                </div>
+            </div>
+        </div>
+    </section>
+     <!---------End services section -------->
     
     
 </body>

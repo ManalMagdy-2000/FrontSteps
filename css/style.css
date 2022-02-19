@@ -140,4 +140,70 @@ section{
     padding: 100px 0;
     position: relative;
 }
+.sectionTitle p{
+    margin-bottom: 100px;
+}
 /*------------------ End about us section-----------------*/
+/*---------start services section---------------*/
+    #servicesSection  .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 50px;
+        position: relative;
+        height: 245px;
+
+    }
+    #servicesSection  .cards > div {
+        width: 350px;;
+        background-color: cadetblue;
+        padding: 35px;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        height: 215px;
+        border: 1px solid white;
+        transition: 0.4s;
+    }
+    #servicesSection  .cards > div .title{
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    #servicesSection  .cards > div .p{
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    #servicesSection  .cards > div button{
+        border: 1px solid var(--themeYellow);
+        color: var(--themeYellow);
+        background-color: whitesmoke;
+        outline: none;
+        padding: 12px 20px;
+        margin-top: 40px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    #servicesSection  .cards > div:hover button {
+        background-color: var(--themeYellow);
+        color: #fff;
+    }
+    #servicesSection  .cards > div:hover{
+        width: 400px;
+        margin-top: -20px;
+        border-color: var(--themeYellow);
+        height: auto;
+
+    }
+
+
+/*---------end services section---------------*/
+  
+ 
+
+
+    
+  
