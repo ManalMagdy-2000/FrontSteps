@@ -266,7 +266,93 @@ section{
     cursor: pointer;
 }
 /*----------------------------------End contact Form------------------*/
- 
+ /*-------------------------------------------Login------------------------------------*/
+.loginPage{
+    background-color: cadetblue;
+
+}
+
+.loginPage .container{
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px whitesmoke;
+	overflow: hidden;
+	width: 400px;
+    max-width: 100%;
+    margin-top: 120px;
+}
+
+.loginPage .header {
+	border-bottom: 1px solid #f0f0f0;
+	padding: 20px 40px;
+}
+
+.loginPage .header h2 {
+    margin: 0;
+    font-weight: bold;
+    color: var(--themeYellow);
+}
+
+.loginPage .form {
+	padding: 30px 40px;	
+}
+
+.loginPage .form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+    position: relative;
+    border: none;
+}
+
+.loginPage .form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+/*--------------input-------------*/
+.loginPage .form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+
+
+/* submit button */
+
+.loginPage .form .btn {
+	background-color: var(--themeYellow);
+	border: 2px solid var(--themeYellow);
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+.loginPage .form .btn:hover{
+    background-color: cadetblue;
+    border-color: cadetblue;
+}
+.registerLink{
+    color: var(--themeYellow);
+   
+}
+.registerLink:hover{
+    color: var(--themeYellow);
+}
+.noAccount{
+    margin-top: 10px;
+    color: cadetblue;
+}
+
+
+/*----------------------------------------------end login--------------------------------*/
 
 
     
