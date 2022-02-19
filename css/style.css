@@ -268,12 +268,15 @@ section{
 /*----------------------------------End contact Form------------------*/
  /*-------------------------------------------Login------------------------------------*/
 .loginPage{
-    background-color: cadetblue;
+    background-color: white;
 
+}
+.loginPage label{
+    color: white;
 }
 
 .loginPage .container{
-	background-color: #fff;
+	background-color: cadetblue;
 	border-radius: 5px;
 	box-shadow: 0 2px 5px whitesmoke;
 	overflow: hidden;
@@ -283,14 +286,14 @@ section{
 }
 
 .loginPage .header {
-	border-bottom: 1px solid #f0f0f0;
+	border-bottom: 1px solid var(--themeYellow);
 	padding: 20px 40px;
 }
 
 .loginPage .header h2 {
     margin: 0;
     font-weight: bold;
-    color: var(--themeYellow);
+    color: white;
 }
 
 .loginPage .form {
@@ -302,6 +305,7 @@ section{
 	padding-bottom: 20px;
     position: relative;
     border: none;
+    background-color: cadetblue;
 }
 
 .loginPage .form-control label {
@@ -336,8 +340,9 @@ section{
 	width: 100%;
 }
 .loginPage .form .btn:hover{
-    background-color: cadetblue;
-    border-color: cadetblue;
+    color: var(--themeYellow);
+    background-color: white;
+    border-color: white;
 }
 .registerLink{
     color: var(--themeYellow);
@@ -348,7 +353,7 @@ section{
 }
 .noAccount{
     margin-top: 10px;
-    color: cadetblue;
+    color: white;
 }
 
 
