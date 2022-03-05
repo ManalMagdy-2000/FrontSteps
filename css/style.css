@@ -28,6 +28,11 @@ p{
 /* ----------End common style-----------*/
 
 /*-------------------Start Home style ------------------*/
+@media (min-width: 1200px){
+.container{
+    max-width: 1300px;
+}
+}
 header{
     width: 100%;
     background-color: rgba(0.0, 0.0, 0.0, 0.6);
