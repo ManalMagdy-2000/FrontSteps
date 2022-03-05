@@ -131,7 +131,7 @@ header nav ul li a:hover{
     text-align:center;
     font-size: 2rem;
     font-weight: 200;
-    margin: 0 auto 50px;
+    margin: 0 auto 0;
     position: relative;
     padding: 10px 0;
     text-transform: uppercase;
@@ -156,8 +156,83 @@ section{
     margin-top: 100px;
 }
 .sectionTitle p{
-    margin-bottom: 100px;
+    margin-bottom: 0%;
 }
+/*---------------------------start about us section -----------*/
+.about{
+    background: url(/Images/aboutUs.png) no-repeat;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.inner-section{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 100px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+}
+.inner-section h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900px;
+}
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.skills button{
+    font-size: 22px;
+    text-align: center;
+    letter-spacing:2px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px;
+    background-color:#ffc10d;
+    color: white;
+    cursor: pointer;
+}
+.skills button:hover{
+    transition: 1s;
+    background-color: #ecf5f5;
+    color: #5f9ea0;
+}
+.about{
+    margin-top: 0%;
+}
+@media screen and (max-width:1200px){
+    .inner-section{
+        padding: 80px;
+    }
+}
+@media screen and (max-width:1000px){
+    .about{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-section{
+        width:100%;
+    }
+}
+@media sreen and(max-width:600px){
+    .about{
+        padding: 0;
+    }
+    .inner-section{
+        padding: 60px;
+    }
+    .skills button{
+        font-size: 19px;
+        padding: 5px;
+        width: 160px;
+    }
+}
+/*-----------------------------------End about us section---------------*/
 /*------------------ End about us section-----------------*/
 /*---------start services section---------------*/
     #servicesSection  .cards{
