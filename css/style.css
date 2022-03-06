@@ -74,13 +74,13 @@ header nav ul li a:hover{
 }
 .logo a{
     text-decoration: none;
-    color: orange; 
+    color: var(--themeYellow); 
     font-size: 30px; 
     padding-top: 0; 
     font-family: 'Monoton', cursive;
 }
 .logo .a span{
-    color: cadetblue; 
+    color: #a9d6d3; 
     font-size:50px;
 }
 .banner{
@@ -205,7 +205,7 @@ section{
 .skills button:hover{
     transition: 1s;
     background-color: #ecf5f5;
-    color: #5f9ea0;
+    color: #a9d6d3;
 }
 .about{
     margin-top: 0%;
@@ -251,7 +251,7 @@ section{
     }
     #servicesSection  .cards > div {
         width: 350px;;
-        background-color: cadetblue;
+        background-color: #a9d6d3;
         padding: 35px;
         color: white;
         text-align: center;
@@ -298,7 +298,7 @@ section{
 /*---------end services section---------------*/
   /*----------------------------start contact form--------------------------*/
 .contact-form{
-    background:cadetblue;
+    background:#a9d6d3;
     margin-top: 10%;
     margin-bottom: 5%;
     width: 70%;
@@ -356,7 +356,7 @@ section{
 }
 
 .loginPage .container{
-	background-color: cadetblue;
+	background-color: #a9d6d3;
 	border-radius: 5px;
 	box-shadow: 0 2px 5px whitesmoke;
 	overflow: hidden;
@@ -385,7 +385,7 @@ section{
 	padding-bottom: 20px;
     position: relative;
     border: none;
-    background-color: cadetblue;
+    background-color: #a9d6d3;
 }
 
 .loginPage .form-control label {
@@ -448,7 +448,7 @@ section{
 }
 
 .signupPage .container{
-	background-color: cadetblue;
+	background-color: #a9d6d3;
 	border-radius: 5px;
 	box-shadow: 0 2px 5px whitesmoke;
 	overflow: hidden;
@@ -477,7 +477,7 @@ section{
 	padding-bottom: 20px;
     position: relative;
     border: none;
-    background-color: cadetblue;
+    background-color: #a9d6d3;
 }
 
 .signupPage .form-control label {

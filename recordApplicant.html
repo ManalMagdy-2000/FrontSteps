@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Represensitive</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/orgRep.css">
+</head>
+<body style="background-color: #c2efeb">
+    <div class="fullContainer " id="orgRepSection">
+        <!--------------Start Navigation bar------------------->
+        <header style="position: relative;">
+            <div class="container">
+                <div class="logo" style="color: #ffc10d; font-size: 30px; padding-top: 0; font-family: 'Monoton', cursive;">
+                 <a href="orgRep.html">front<span style="color: #50e5de; font-size:50px;">S</span>teps</a>
+                </div>
+                <nav class="topnav">
+                    <ul>
+                        <li>
+                            <a href="orgRep.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#aboutSection">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#servicesSection">Services</a>
+                        </li>
+                        <li>
+                            <a href="#contactSection">Contact Us</a>
+                        </li>
+                        <div class="dropdown">  
+                            <button onmouseover="myProfile()" class="dropbtn">My Profile</button>  
+                            <div id="myDropdown1" class="dropdown-content">  
+                              <a href="recordApplicant.html">Record Applicant</a>  
+                              <a href="organizeAppeal.html">Organize Appeal</a>  
+                              <a href="recordContribution.html">Record Contribution</a>  
+                              <a href="RecordDisbursement.html">Record Disbursement</a>  
+                            </div>  
+                          </div>  
+                          <li>
+                            <a href="index.html" style="background-color: var(--themeYellow);">Log out</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+ <!--------------Navigation bar------------------->
+      <!--start form-->
+<div class="applicantPage">
+      <a href="#" name="record"></a>
+      <div class="container">
+        <div class="header">
+            <h2 style="color: #445654;">Record Applicant</h2>
+        </div>
+        <form id="form" class="form" action="#">         
+            <div class="form-control">
+              <label for="Name"> Full Name</label>
+                   <input type="text"  name='recordName' id="recordName" 
+                   placeholder="Rebecca smith"  />
+           </div>
+            <div class="form-control">
+                <label for="ID">ID Number</label>
+                <input type="text" name="recordPassword" 
+                placeholder="ID" id="recordPassword" 
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                    title="Must contain at least one number
+                     and one uppercase and lowercase letter,
+                     and at least 8 or more characters" /> </div> 
+            <div class="form-control">
+              <label for="position">Household Income</label>
+                   <input type="text"  name='recordPosition' 
+                   id="recordPosition" placeholder="RM1500" />
+           </div> 
+            <button class="btn" id="recordStaff" >Add</button>
+        </form>
+    </div>
+      <!--End form-->
+</div>
+<!-- start footer-->
+<footer class="bg-dark text-center text-white">
+<!-- Grid container -->
+<div class="container ">
+  <!-- Section: Form -->
+  <section class="">
+    <form action="">
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+        <!--Grid column-->
+        <div class="col-auto">
+          <p class="pt-2">
+            <strong>Sign up for our newsletter</strong>
+          </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-5 col-12">
+          <!-- Email input -->
+          <div class="form-outline form-white mb-4">
+            <input type="email" id="form5Example2" class="form-control" placeholder="Email address.." />
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-auto">
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-outline-light mb-4">
+            Subscribe
+          </button>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </form>
+  </section>
+  <!-- Section: Form -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  &copy;2022frontSteps
+</div>
+<!-- Copyright -->
+</footer>
+<!--End footer-->
+
+ <script src="Js/orgRep.js"></script>   
+</body>
+</html>
