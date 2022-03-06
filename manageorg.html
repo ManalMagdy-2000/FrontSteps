@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Organization</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body class="manageorgPage">
+  
+      <!--start form-->
+      <div class="container">
+        <div class="header">
+            <h2>Manage Organization</h2>
+			<header>
+</header>
+		
+        <form id="form" class="form" action="manageOrgCheck.php">
+		<div class="form-control">
+
+        <label for="orgid"> Organization ID </label>
+            <input type="text" name="orgid" id="orgid" placeholder="Organization ID">
+            <input type="submit" value="Submit" class="btn col-5">
+        </div>
+		</form>
+
+        <div>
+        <table class="table" id="orgList">
+        <thead>
+                    <tr>
+                        <th> Organization ID</th>
+                        <th>Organization name</th>
+                        
+                    </tr>
+                </thead>
+                <tbody class="text-light">
+				
+                <?php
+                    session_start();
+                    if(!isset($_SESSION['orgList'])){
+                        header("Location:manageOrgCheck.php");
+                    }
+                    foreach ($_SESSION['orgList'] as $index => $arrayRow) {
+                        echo '<tr>';
+                        echo '<td>'. $arrayRow['applicationID'] .'</td>';
+                        echo '<td>'. $arrayRow['orgname'] .'</td>';
+                        echo '</tr>';
+                    }
+                    unset($_SESSION['orgList']);
+                ?>
+
+                </tbody>
+                </table>
+				</div>
+
+
+		    <form id="form" class="form" action="insertmanageorg.php">
+
+			    <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text"  name='username' id="username" placeholder="Enter Username"required  />
+                </div>
+				
+			    <div class="form-control">
+                <label for="orgid"> Organization ID </label>
+                <input type="text" name="orgid" id="orgid" placeholder="Organization ID">
+                </div>
+				
+			    <div class="form-control">                
+				<label for="email">Email</label>
+				<input type="email" name= "email" id="email" placeholder="Email" required>   
+                </div>
+				
+			    <div class="form-control">                
+				<label for="phone">MobileNo.</label>
+				<input type="text" name= "phone" id="phone" placeholder="Enter Phone Number" required>   
+                </div>
+				
+			    <div class="form-control">                
+				<label for="job"> Job Title </label>
+                <input type="text" name="job" id="job" placeholder="Job Title">
+                </div>
+				
+			    <div class="form-control">				
+				<label for="usertype"> Usertype </label>
+                <input type="text" name="usertype" id="usertype" placeholder="User Type">
+                </div>  
+						
+                <br>
+                <input type="submit" value="Submit" class="btn col-8">
+				</form>
+
+        
+    </div>
+   
+</div>
+</div>
+</main>
+<footer>
+    <p>FrontSteps 2022
+    </p>
+</footer>
+</div>
+</body>
+
+</html>
 
