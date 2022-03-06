@@ -1,0 +1,102 @@
+.banner{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(../images/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+.banner h1{
+  margin-top: 230px;
+  display: inline-block;
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 0 0 2px #000;
+  width: 50%;
+  line-height: 4.2rem;
+  font-weight: 100;
+}
+.banner h1 span{
+  background-color: var(--themeYellow);
+  display: inline-block;
+  line-height: 3.5rem;
+  padding: 0 15px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.banner p{
+  color: #fff;
+  width: 50%;
+  text-shadow: 0 0 2px #000;
+  margin-top: 10px;
+}
+.banner button{
+  background-color:var(--themeYellow);
+  border: 0;
+  outline: none;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 20px;
+  font-size: 18px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.dropbtn {  
+  background-color:#666666;
+  border: none;
+  display: inline-block;
+  height: 75px;
+  line-height: 75px;
+  padding: 0px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.3s; 
+  
+}  
+  
+.dropbtn:hover {  
+  border: none;
+  background-color: var(--themeYellow);
+  text-decoration: none;
+  color: whitesmoke;
+
+}   
+.dropdown {  
+  position: relative;  
+  display: inline-block;  
+  list-style-type: none;
+  text-decoration: none;
+}  
+  
+.dropdown-content {  
+  display: none;  
+  position: absolute;  
+  background-color: white;  
+  min-width: 123px;  
+  overflow: auto;    
+}  
+  
+.dropdown-content a {  
+  color: black;  
+  padding: 12px 16px;  
+  text-decoration: none;  
+  display: block;  
+}  
+  
+.dropdown a:hover {  
+   background-color: #ddd;  
+ }  
+  
+.show {  
+  display: block;  
+} 
+button.dropbtn{
+  background-color: rgba(0.0, 0.0, 0.0, 0.009);
+  font-size: 16px;
+  padding: 0 15px;
+  border-radius: 0;
+  margin-right: 80px;
+} 

@@ -8,38 +8,204 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/orgRep.css">
 </head>
 <body>
-     <!--------------Start Navigation bar------------------->
-     <header>
-        <div class="container">
-            <div class="logo" style="color: orange; font-size: 30px; padding-top: 0; font-family: 'Monoton', cursive;">
-             <a href="orgRep.html">front<span style="color: cadetblue; font-size:50px;">S</span>teps</a>
+    <div class="fullContainer banner " id="orgRepSection">
+        <!--------------Start Navigation bar------------------->
+        <header>
+            <div class="container">
+                <div class="logo" style="color: orange; font-size: 30px; padding-top: 0; font-family: 'Monoton', cursive;">
+                 <a href="orgRep.html">front<span style="color: cadetblue; font-size:50px;">S</span>teps</a>
+                </div>
+                <nav class="topnav">
+                    <ul>
+                        <li>
+                            <a href="orgRep.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#aboutSection">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#servicesSection">Services</a>
+                        </li>
+                        <li>
+                            <a href="#contactSection">Contact Us</a>
+                        </li>
+                        <div class="dropdown">  
+                            <button onmouseover="myProfile()" class="dropbtn">My Profile</button>  
+                            <div id="myDropdown1" class="dropdown-content">  
+                              <a href="recordApplicant.html">Record Applicant</a>  
+                              <a href="organizeAppeal.html">Organize Appeal</a>  
+                              <a href="recordContribution.html">Record Contribution</a>  
+                              <a href="RecordDisbursement.html">Record Disbursement</a>  
+                            </div>  
+                          </div>  
+                          <li>
+                            <a href="index.html" style="background-color: var(--themeYellow);">Log out</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="topnav">
-                <ul>
-                    <li>
-                        <a href="#">Organize Appeals</a>
-                    </li>
-                    <li>
-                        <a href="#">Record Applicant</a>
-                    </li>
-                    <li>
-                        <a href="#">Record Disbursements</a>
-                    </li>
-                    <li>
-                        <a href="#">Record Contribution</a>
-                    </li>
-                    <li>
-                        <a href="index.html" style="background-color: var(--themeYellow);">Log out</a>
-                    </li>
-                </ul>
-            </nav>
+        </header>
+        <!--------------Navigation bar------------------->
+        <div class="container">
+            <h1>give a helping hand to those <span>Who</span> need it </h1>
+            <p>Due to the covid-19 pandemic and extended lockdowns, there is much economic hardship faced by
+                communities all over the world , so frontSteps helps you to deliver aid whether in the form of cash, food or services to the underprivileged.</p>
+            <button>Take a front step</button>
         </div>
-    </header>
-    <!--------------Navigation bar------------------->
+    </div>
+<!---start about us -->
+<section class="fullContainer" id="aboutSection">
+    <div class="container">
+        <h2 class="sectionTitle">About Us</h2>
+    </div>
+</section>
+        <div class="col-lg-12">
+            <div class="about">
+              <div class="inner-section">
+                <p class="text">
+                  frontSteps is an international food aid organisation 
+                  that works in neglected communities around the world, 
+                  feeding forgotten and underserved individuals.there has been 
+                  a surge in domestic violence during Covid-19 crisis, and 
+                  charity fronSteps is appealing for donations to help vulnerable 
+                  women and children. They state that staying at home increases 
+                  the risk of domestic abuse for thousands of women and children,
+                   and your donations will be used towards keeping frontSteps's life-saving 
+                   services running during COVID-19.
+                </p>
+                <div class="skills">
+                  <button onclick="window.location.href='/#contactUs'">Contact Us</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
+<!-----End About Us ---->
+<!---------start services section -------->
+<section class="fullContainer" id="servicesSection">
+    <div class="container">
+        <h2 class="sectionTitle">Services</h2>
+        <div class="cards">
+            <div class="donationBox">
+                <!-- Start donation Box-->
+                <div class="title">Give Dontation</div>
+                <a href="logIn.html">
+                    <button>Donate Now</button>
+                </a>
+                
+                <!-- Ends donation Box-->
+            </div>
+            <div class="aidBox">
+                <!-- aid applicant Box-->
+                <div class="title">Aid Applicant</div>
+                <a href="logIn.html">
+                    <button>Apply Now</button>
+                </a>
+                <!-- Ends aid applicant Box-->
+            </div>
+            <div class="volunteerBox">
+                <!-- Start volunteer Box-->
+                <div class="title">Become a volunteer</div>
+                <a href="logIn.html">
+                    <button >Become Now</button>
+                </a>
+                <!-- Ends volunteer Box-->
+            </div>
+        </div>
+    </div>
+</section>
+ <!---------End services section -------->
+ <!-------------------------------------start contact form-------------->
+<a name="contactUs" ></a>
+<section class="fullContainer" id="contactSection">
+<div class="container">
+    <h2 class="sectionTitle">Contact Us</h2>
+    <div class="container contact-form">
+        <div class="contact-image">
+            <img src="Images/contact.jpg" alt="conatct_image"/>
+        </div>
+        <form method="post">
+            <h3>Drop Us a Message</h3>
+           <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+      </div>
+      <!-------------------------------------End contact form-------------->
+</div>
+</section>
 
-    
+<!-- start footer-->
+<footer class="bg-dark text-center text-white">
+<!-- Grid container -->
+<div class="container ">
+  <!-- Section: Form -->
+  <section class="">
+    <form action="">
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+        <!--Grid column-->
+        <div class="col-auto">
+          <p class="pt-2">
+            <strong>Sign up for our newsletter</strong>
+          </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-5 col-12">
+          <!-- Email input -->
+          <div class="form-outline form-white mb-4">
+            <input type="email" id="form5Example2" class="form-control" placeholder="Email address.." />
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-auto">
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-outline-light mb-4">
+            Subscribe
+          </button>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </form>
+  </section>
+  <!-- Section: Form -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  &copy;2022frontSteps
+</div>
+<!-- Copyright -->
+</footer>
+<!--End footer-->
+
+ <script src="Js/orgRep.js"></script>   
 </body>
 </html>

@@ -57,7 +57,7 @@ header nav ul{
 header nav ul li{
     display: inline-block;
 }
-header nav ul li a{
+header nav ul li a {
     display: inline-block;
     height: 75px;
     line-height: 75px;
