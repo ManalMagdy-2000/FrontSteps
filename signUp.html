@@ -1,67 +1,182 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>SignUp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/orgRep.css">
 </head>
-<body class="signupPage">
-      <!--start form-->
+<body style="background-color: #c2efeb">
+    <div class="fullContainer " id="orgRepSection">
+        <!--------------Start Navigation bar------------------->
+        <header style="position: relative;">
+            <div class="container">
+                <div class="logo" style="color: #ffc10d; font-size: 30px; padding-top: 0; font-family: 'Monoton', cursive;">
+                 <a href="orgRep.html">front<span style="color: #50e5de; font-size:50px;">S</span>teps</a>
+                </div>
+                <nav class="topnav">
+                    <ul>
+                        <li>
+                            <a href="orgRep.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#aboutSection">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#servicesSection">Services</a>
+                        </li>
+                        <li>
+                            <a href="#contactSection">Contact Us</a>
+                        </li>
+                        <div class="dropdown">  
+                            <button onmouseover="myProfile()" class="dropbtn">My Profile</button>  
+                            <div id="myDropdown1" class="dropdown-content">  
+                              <a href="recordApplicant.html">Record Applicant</a>  
+                              <a href="organizeAppeal.html">Organize Appeal</a>  
+                              <a href="recordContribution.html">Record Contribution</a>  
+                              <a href="RecordDisbursement.html">Record Disbursement</a>  
+                            </div>  
+                          </div>  
+                          <li>
+                            <a href="index.html" style="background-color: var(--themeYellow);">Log out</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+ <!--------------Navigation bar------------------->
+ 
+ 
+ 
+ 
+
+ 
+ <div class="applicantPage">
+      <a href="#" name="record"></a>
       <div class="container">
         <div class="header">
-            <h2>Sign Up</h2>
-			<header>
-</header>
-<nav class="navbar justify-content-end p-0"> 
-    <a href="Logout.php">Exit </a>
-</nav>
+            <h2 style="color: #445654;">SignUp</h2>
         </div>
-		
-        <form id="form" class="form" action="signupApp.php">
+
+
+		  <form id="form" class="form" action="signupUser.php" method="post">
 			
-			 <div class="form-control">
-                <label for="username">Username</label>
-                <input type="text"  name='username' id="username" placeholder="Enter Username"required  />
+			<div class="form-control">
+            <label for="username">Username</label>
+            <input type="text"  name='username' id="username" placeholder="Enter Username"required >
             </div>
-			
            
 
             <div class="form-control">
-                <label for="password">Password</label>
-				<input type="password" name= "password" id="password" placeholder="Enter Password" required>   
-        </div>  
+            <label for="password">Password</label>
+			<input type="password" name= "password" id="password" placeholder="Enter Password" required>   
+			</div>  
 
-           
 
             <div class="form-control">
-                <label for="fullname">Fullname</label>
+            <label for="fullname">Fullname</label>
             <input type="text" name= "fullname" id="fullname" placeholder="Enter Full Name" required>   
-        </div>  
+			</div>  
 
             <div class="form-control">
-                <label for="email">Email</label>
+            <label for="email">Email</label>
             <input type="email" name= "email" id="email" placeholder="Email" required>   
-        </div>  
-
+			</div>  
 
             <div class="form-control">
-                <label for="phone">Phone</label>
-            <input type="text" name= "phone" id="phone" placeholder="Enter Phone Number" required>   
-        </div>  
-        <br>
-        <input type="submit" class="btn " placeholder="Enter Comments (If Any)">
+            <label for="phone">Phone</label>
+            <input type="text" name= "phone" id="phone" placeholder="Enter Phone Number" required>  
+			</div>
+			<div class="form-control">
+
+			<label for="usertype"> Usertype </label>
+            <input type="text" name="usertype" id="usertype" placeholder="User Type">			
+			</div>  
+			<br>
+			<input type="submit" class="btn " placeholder="Enter Comments (If Any)">
         
         
     </form>
+
         
     </div>
-
-  
       <!--End form-->
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+</div>
+<!-- start footer-->
+<footer class="bg-dark text-center text-white">
+<!-- Grid container -->
+<div class="container ">
+  <!-- Section: Form -->
+  <section class="">
+    <form action="">
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+        <!--Grid column-->
+        <div class="col-auto">
+          <p class="pt-2">
+            <strong>Sign up for our newsletter</strong>
+          </p>
+        </div>
+        <!--Grid column-->
 
-<p class="copyright" style="margin-left: 46%; margin-top: 100px; color:cadetblue;">&copy;2022frontSteps</p>
-<script src="Js/signup.js"></script>
+        <!--Grid column-->
+        <div class="col-md-5 col-12">
+          <!-- Email input -->
+          <div class="form-outline form-white mb-4">
+            <input type="email" id="form5Example2" class="form-control" placeholder="Email address.." />
+          </div>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-auto">
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-outline-light mb-4">
+            Subscribe
+          </button>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </form>
+  </section>
+  <!-- Section: Form -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  &copy;2022frontSteps
+</div>
+<!-- Copyright -->
+</footer>
+<!--End footer-->
+
+<script src="Js/orgRep.js"></script>
+</body>
 </html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
