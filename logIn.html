@@ -14,14 +14,14 @@
         <div class="header">
             <h2>LogIn</h2>
         </div>
-        <form id="form" class="form" action="#">
+        <form method="POST" class="form" action="php/login.php">
             <div class="form-control">
                 <label for="username">Username</label>
                 <input type="text"  name='username' id="username" placeholder="Manal10_volunteer" required  />
             </div>
             <div class="form-control">
                 <label for="password">Password</label>
-                <input type="password" placeholder="Password" id="password_login" 
+                <input type="password" name="password" placeholder="Password" id="password_login" 
                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
                     title="Must contain at least one number and one uppercase and lowercase letter,
                      and at least 8 or more characters" required/>
@@ -43,4 +43,5 @@
 
 <p class="copyright" style="margin-left: 46%; margin-top: 100px; color:cadetblue;">&copy;2022frontSteps</p>
 <script src="Js/login.js"></script>
+</body>
 </html>

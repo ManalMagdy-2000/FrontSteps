@@ -17,13 +17,9 @@ window.onclick = function(event) {
   }  
 }  
 function randomString() {  
-  //define a variable consisting alphabets in small and capital letter  
 var characters = "ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";  
-    
-  //specify the length for the new string  
 var lenString = 3;  
 var randomstring = '';  
-  //loop to select a new character in each iteration  
 for (var i=0; i<lenString; i++) {  
 var rnum = Math.floor(Math.random() * characters.length);  
 randomstring += characters.substring(rnum, rnum+1);  
@@ -37,7 +33,6 @@ for(i = 0; i <idLength; i=i+1){
   randomNum = Math.floor(Math.random() * chars.length);
   randomID+= chars.substring(randomNum , randomNum+1);
 }; 
-//display the generated string   
 alert("Applicant Successfully registered!"+"\n Username: "+ "Applicant"+randomstring  + "\n Password: " + randomID );
 }  
 
