@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Represensitive</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/orgRep.css">
+</head>
+<style>
+    select.form-control:not([size]):not([multiple]) {
+     height: calc(2.25rem + 2px); 
+}
+
+.applicantPage .form .btn{
+  margin-top: 150px;
+}
+
+</style>
+<body style="background-color: #c2efeb">
+    <div class="fullContainer " id="orgRepSection">
+        <!--------------Start Navigation bar------------------->
+        <header style="position: relative;">
+            <div class="container">
+                <div class="logo" style="color: #ffc10d; font-size: 30px; padding-top: 0; font-family: 'Monoton', cursive;">
+                 <a href="selfRegister.html">front<span style="color: #50e5de; font-size:50px;">S</span>teps</a>
+                </div>
+                <nav class="topnav">
+                    <ul>
+                        <li>
+                            <a href="selfRegister.html">MyProfile</a>
+                        </li> 
+                          <li>
+                            <a href="index.html" style="background-color: var(--themeYellow);">Log out</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+ <!--------------Navigation bar------------------->
+      <!--start form-->
+<div class="applicantPage">
+      <a href="#" name="record"></a>
+      <div class="container">
+        <div class="header">
+            <h2 style="color: #445654;">Register to Organzation </h2>
+        </div>
+        <form id="form" class="form" action="php/connect.php" method="POST">         
+                <div class="col-lg-12">
+                    <label>Organization Name</label>
+                    <select style="box-shadow: none; padding-bottom: 0; border-color: rgb(219, 219, 219); border-style: solid;" id="orgs" class="form-control">
+                        <option class="opt" value="Country" selected="">NGO</option>
+                        <option value="Australia"> HELPAid </option>
+                        <option value="Australia"> Life of Giving </option>
+                        <option value="Australia"> CharitAble </option>
+                        <option value="Australia"> Donation Nation </option>
+                        
+                    </select>
+                </div>     
+            <input type="submit" name="addApplicant" value="Register" class="btn" id="registerOrg">
+        </form>
+    </div>
+      <!--End form-->
+</div>
+<!-- start footer-->
+<footer class="bg-dark text-center text-white">
+<!-- Grid container -->
+<div class="container ">
+  <!-- Section: Form -->
+  <section class="">
+    <form action="">
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+        <!--Grid column-->
+        <div class="col-auto">
+          <p class="pt-2">
+            <strong>Sign up for our newsletter</strong>
+          </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-5 col-12">
+          <!-- Email input -->
+          <div class="form-outline form-white mb-4">
+            <input type="email" id="form5Example2" class="form-control" placeholder="Email address.." />
+          </div>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-auto">
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-outline-light mb-4">
+            Subscribe
+          </button>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </form>
+  </section>
+  <!-- Section: Form -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  &copy;2022frontSteps
+</div>
+<!-- Copyright -->
+</footer>
+<!--End footer-->
+
+<script src="Js/orgRep.js"></script>
+</body>
+</html>
