@@ -8,19 +8,16 @@
   src="https://kit.fontawesome.com/fc0bcca8a3.js"
   crossorigin="anonymous"
 ></script>
+
 <link
   href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600|Montserrat:300,300i,400,400i,500,500i,600,600i,700|Ubuntu:300,300i,400,400i,500,500i&display=swap"
   rel="stylesheet"/>
 <title>Organization Represensitive</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/viewApplicant.css" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/orgRep.css">
-<link rel="stylesheet" href="css/recordDisbursment.css">
+<link rel="stylesheet" href="css/viewApplicant.css" />
 </head>
 <body>
     <div class="fullContainer banner " id="orgRepSection">
@@ -50,7 +47,7 @@
                               <a href="recordApplicant.html">Record Applicant</a>  
                               <a href="organizeAppeal.html">Organize Appeal</a>  
                               <a href="recordContribution.html">Record Contribution</a>  
-                              <a href="RecordDisbursement.html">Record Disbursement</a>  
+                              <a href="applicantDisbursement.html">Record Disbursement</a>  
                             </div>  
                           </div>  
                           <li>
@@ -62,27 +59,44 @@
         </header>
         <!--------------Navigation bar------------------->
     </div>
-    <div>
-        <div class="heading"></div>
-            <!------------------------------------ organizations list---------->  
-        <div class="orgList">   
-          <a href="#" name="record"></a>
-          <div class="containerOrgList">
-            <section>
-              <h1>Registerd Organizations</h1>
-              <button class="btn btn--primary btn--block" id="orgBtn1"  onclick="location.href='viewAppeal2.html'">HELP Aid</button>
-              <button class="btn btn--primary btn--block" id="orgBtn2"  onclick="location.href='viewAppeal2.html'">NGO</button>
-              <button class="btn btn--primary btn--block" id="orgBtn3"  onclick="location.href='viewAppeal2.html'">Donation Nation</button>
-            </section>
-          </div>
-<!------------------------------------ End organizations list---------->  
+    <div class="heading"></div>
+       <!--start form-->
+<div class="applicantPage">
+    <a href="#" name="record"></a>
+    <div class="container">
+      <div class="header">
+          <h2 style="color: #445654;">Record Disbursement</h2>
       </div>
+      <div id="error"></div>
+      <form name="form"  action="php/recordDisbursement.php" method="post" id="form" class="form">         
+         <p class="success register-success"></p> 
+        <div class="form-control">
+            <label for="date"> Disbursement Date</label>
+                 <input id="dsbtDate" type="date"  name='dsbtDate'  />
+                 <p class="error dsbtDate-error"></p>
+         </div>
+          <div class="form-control">
+              <label for="cashAmount">Cash Amount</label>
+              <input id="cashAmount" type="number" name="cashAmount" /> </div> 
+              <p class="error cashAmount-error"></p>
+          <div class="form-control">
+            <label for="position">Goods</label>
+                 <input id="goods" type="text"  name='goods'  />
+                 <p class="error goods-error"></p>
+
+         </div> 
+          <input type="submit" name="recordDbst" value="Record" class="btn" id="recordDsbt" >
+         <p class="error record-error"></p>
+        </form>
+  </div>
+    <!--End form-->
+</div>
 <!-- start footer-->
 <footer class="bg-dark text-center text-white">
 <!-- Grid container -->
 <div class="container ">
   <!-- Section: Form -->
-  <section class="">
+  <section class="" >
     <form action="">
       <!--Grid row-->
       <div class="row d-flex justify-content-center">
@@ -128,6 +142,7 @@
 <!--End footer-->
 
  <script src="Js/orgRep.js"></script>  
- <script src="Js/viewOrganization.js"></script>
+ <script src="Js/applicantDisbursement.js"></script>
+ <script src="Js/disbursementVal.js"></script>
 </body> 
 </html>

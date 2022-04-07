@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Aid Disbursement</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/orgRep.css">
+    <link rel="stylesheet" href="css/recordDisbursment.css">
+
+</head>
+<style>
+  i:hover{
+    cursor: pointer;
+  }
+</style>
+<body style="background-color: #fff">
+    <div class="fullContainer " id="orgRepSection">
+        <!--------------Start Navigation bar------------------->
+        <header style="position: relative;">
+            <div class="container" style="padding: 10px;">
+                <div class="logo" style="color: #ffc10d; font-size: 30px; padding-top: 0; font-family: 'Monoton', cursive;">
+                 <a href="orgRep.html">front<span style="color: #50e5de; font-size:50px;">S</span>teps</a>
+                </div>
+                <nav class="topnav">
+                    <ul>
+                        <li>
+                            <a href="orgRep.html">Home</a>
+                        </li>
+                        <li>
+                          <a href="contributionList.html">Record Disbursement</a>
+                      </li>
+                          <li>
+                            <a href="index.html" style="background-color: var(--themeYellow);">Log out</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+ <!--------------Navigation bar------------------->
+<!-----------------------------------start Table for Appeals------------------>
+<!-----------------------------------End Table------------------>
+<!------------------------------------ organizations list---------->
+<div class="orgList">
+  <a href="#" name="record"></a>
+    <section class="ftco-section ftco-agent">
+    	<div class="container">
+        <div class="applicationTable">
+          <table id='table' class="table"style="width:100%; background-color:white; color:#ffce49; text-align:center;">
+            <thead>
+              <tr style="color:#505f66;">
+                <th>#</th>
+                <th>ContributionID</th>
+                <th>Recived Date </th>
+                <th>Amount(RM)</th>
+                <th>Payment Channel</th>
+                <th>Reference Number</th>
+                <th>Estimated Value</th>
+                <th>Description</th>
+                <th>view Applicant</th>
+              </tr>
+              <tr>
+                <th style="color:#505f66;">1</th>
+                <th>ctb1</th>
+                <th>15/03/2022</th>
+                <th>2500</th>
+                <th>Card</th>
+                <th>123487596</th>
+                <th>-</th>
+                <th>-</th>
+                <th><i onclick="location.href = 'http://localhost/FrontSteps/viewApplicant.html';" class="fa fa-search-plus" aria-hidden="true"></i></th>
+              </tr>
+              <tr>
+                <th style="color:#505f66;">2</th>
+                <th>ctb2</th>
+                <th>25/2/2022</th>
+                <th>1000</th>
+                <th>Cash</th>
+                <th>669448251</th>
+                <th>-</th>
+                <th>-</th>
+                <th><i onclick='location.href = "http://localhost/FrontSteps/viewApplicant.html";' class="fa fa-search-plus" aria-hidden="true"></i></th>
+              </tr>
+              <tr>
+                <th style="color:#505f66;">3</th>
+                <th>ctb3</th>
+                <th>10/01/2022</th>
+                <th>-</th>
+                <th>-</th>
+                <th>-</th>
+                <th>2</th>
+                <th>Fan , Study desk</th>
+                <th><i onclick='location.href = "http://localhost/FrontSteps/viewApplicant.html";' class="fa fa-search-plus" aria-hidden="true"></i></th>
+              </tr>
+              <tr>
+                <th style="color:#505f66;">4</th>
+                <th>ctb4</th>
+                <th>18/02/2022</th>
+                <th>3000</th>
+                <th>cheque</th>
+                <th>887145225</th>
+                <th>-</th>
+                <th>-</th>
+                <th><i onclick='location.href = "http://localhost/FrontSteps/viewApplicant.html";' class="fa fa-search-plus" aria-hidden="true"></i></th>
+              </tr>
+              <tr>
+                <th style="color:#505f66;">5</th>
+                <th>ctb5</th>
+                <th>10/01/2022</th>
+                <th>1800</th>
+                <th>Card</th>
+                <th>49495582369</th>
+                <th>-</th>
+                <th>-</th>
+                <th><i onclick='location.href = "http://localhost/FrontSteps/viewApplicant.html";' class="fa fa-search-plus" aria-hidden="true"></i></th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </section>
+<!------------------------------------ End organizations list---------->
+ <!-- start footer-->
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container">
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example2" class="form-control" placeholder="Email address.." />
+              </div>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+    </div>
+    <!-- Grid container -->
+    
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      &copy;2022frontSteps
+    </div>
+    <!-- Copyright -->
+    </footer>
+    <!--End footer-->
+
+    <script src="Js/orgRep.js"></script>   
+</body>
+</html>

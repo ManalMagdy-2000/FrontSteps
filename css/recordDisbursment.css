@@ -1,0 +1,45 @@
+#orgBtn1 , #orgBtn2 ,#orgBtn3{
+    border-radius: 40px;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    margin:1rem 13rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.btn--primary{
+    background-color: #ffc10d;
+    color: white;
+
+}
+.btn--primary:hover{
+    background-color: #79e5e0;
+}
+.btn--block{
+    width: 50%;
+    display: inline-block;
+}
+.regOrg{
+    margin:5rem 22rem;
+    margin-top: 0;
+}
+.orgList .containerOrgList{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+    max-width: 100%;
+    margin-top: 80px;
+    margin-left: 21.5rem;
+}
+.containerOrgList{
+    width: 800px;
+}
+.h1 ,h1{
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+    color: #505f66;
+    font-size: 2rem;
+}
+

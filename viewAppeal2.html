@@ -8,27 +8,27 @@
   src="https://kit.fontawesome.com/fc0bcca8a3.js"
   crossorigin="anonymous"
 ></script>
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+      </script>
 <link
   href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600|Montserrat:300,300i,400,400i,500,500i,600,600i,700|Ubuntu:300,300i,400,400i,500,500i&display=swap"
   rel="stylesheet"/>
 <title>Organization Represensitive</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/viewApplicant.css" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/orgRep.css">
-<link rel="stylesheet" href="css/recordDisbursment.css">
+<link rel="stylesheet" href="css/viewApplicant.css" />
+<link rel="stylesheet" href="css/viewAppeals.css">
 </head>
 <body>
     <div class="fullContainer banner " id="orgRepSection">
         <!--------------Start Navigation bar------------------->
         <header>
             <div class="container">
-                <div class="logo" style="color:#ffc10d; font-size: 30px; padding-top: 0; font-family: 'Monoton', cursive;">
-                 <a href="orgRep.html">front<span style="color: #50e5de; font-size:50px;">S</span>teps</a>
+                <div class="logo" style="color: #ffc10d; font-size: 30px; padding-top: 0; font-family: 'Monoton', cursive;">
+                 <a href="index.html">front<span style="color: #50e5de; ; font-size:50px;">S</span>teps</a>
                 </div>
                 <nav class="topnav">
                     <ul>
@@ -50,33 +50,79 @@
                               <a href="recordApplicant.html">Record Applicant</a>  
                               <a href="organizeAppeal.html">Organize Appeal</a>  
                               <a href="recordContribution.html">Record Contribution</a>  
-                              <a href="RecordDisbursement.html">Record Disbursement</a>  
+                              <a href="viewAppeal2.html">Record Disbursement</a>  
                             </div>  
                           </div>  
                           <li>
                             <a href="index.html" style="background-color: var(--themeYellow);">Log out</a>
                         </li>
                     </ul>
-                </nav>
             </div>
         </header>
         <!--------------Navigation bar------------------->
     </div>
-    <div>
+    <div class="container2">
         <div class="heading"></div>
-            <!------------------------------------ organizations list---------->  
-        <div class="orgList">   
-          <a href="#" name="record"></a>
-          <div class="containerOrgList">
-            <section>
-              <h1>Registerd Organizations</h1>
-              <button class="btn btn--primary btn--block" id="orgBtn1"  onclick="location.href='viewAppeal2.html'">HELP Aid</button>
-              <button class="btn btn--primary btn--block" id="orgBtn2"  onclick="location.href='viewAppeal2.html'">NGO</button>
-              <button class="btn btn--primary btn--block" id="orgBtn3"  onclick="location.href='viewAppeal2.html'">Donation Nation</button>
-            </section>
+  
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="https://i.imgur.com/v1fzRXv.jpg" alt="top1" class="image-top" />
+            <h1 class="fullname">Appeal1</h1>
+            <p class="about-me">
+                From 2022-03-22 To 2022-03-22
+            </p>
+            <p class="about-me">
+                Living Expenses
+            </p>
+            <button type="button" onclick="location.href='contributionList.html'">View</button>
+            <div id="container3">
+                <div class="message">
+                    Thanks for Subscription<br>A Computer
+                    Science Portal for Geeks</div>
+                <button class="yes">okay</button>
+             </div>
           </div>
-<!------------------------------------ End organizations list---------->  
+  
+          <div class="card">
+            <img src="https://i.imgur.com/v1fzRXv.jpg" alt="top1" class="image-top" />
+            <h1 class="fullname">Appeal2</h1>
+            <p class="about-me">
+                From 2022-04-20 To 2023-04-20
+            </p>
+            <p class="about-me">
+                Study loan
+            </p>
+             <button type="button" onclick="location.href='contributionList.html'">View</button>
+             <div id="container3">
+                <div class="message">
+                    Thanks for Subscription<br>A Computer
+                    Science Portal for Geeks</div>
+                <button class="yes">okay</button>
+             </div>
+          </div>
+  
+          <div class="card">
+            <img src="https://i.imgur.com/v1fzRXv.jpg" alt="top1" class="image-top" />
+            <h1 class="fullname">Appeal3</h1>
+            <p class="about-me">
+                From 2022-04-13 To 2023-04-20
+            </p>
+            <p class="about-me">
+                Healthcare
+            </p>
+             <button type="button"  onclick="location.href='contributionList.html'">View</button>
+          </div>
+        </div>
       </div>
+      <button class="pastAppeal">View Past Appeals</button>
+      <div id="container3">
+        <div class="message">
+            Thanks for Subscription<br>A Computer
+            Science Portal for Geeks</div>
+        <button class="yes">okay</button>
+     </div>
+
+
 <!-- start footer-->
 <footer class="bg-dark text-center text-white">
 <!-- Grid container -->
@@ -128,6 +174,6 @@
 <!--End footer-->
 
  <script src="Js/orgRep.js"></script>  
- <script src="Js/viewOrganization.js"></script>
+ <script src="Js/currentAppeal.js"></script>
 </body> 
 </html>

@@ -1,0 +1,22 @@
+.profile .table-properties th {
+  font-weight: normal;
+  width: 15rem;
+  color: white;
+}
+
+.profile .table-properties td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: white;
+}
+.profile .table-properties tr:first-child td,
+.profile .table-properties tr:first-child th {
+  border-top: none !important;
+  color: white;
+}
+
+.profile .img-lg {
+  width: 9rem;
+  height: 9rem;
+}
